@@ -11,9 +11,6 @@ Assuming you already have ESLint installed, run:
 # npm
 npm install eslint-plugin-react-hooks --save-dev
 
-# yarn
-yarn add eslint-plugin-react-hooks --dev
-Then extend the recommended eslint config:
 
 {
   "extends": [
@@ -46,13 +43,7 @@ exhaustive-deps can be configured to validate dependencies of custom Hooks with 
     }]
   }
 }
-We suggest to use this option very sparingly, if at all. Generally saying, we recommend most custom Hooks to not use the dependencies argument, and instead provide a higher-level API that is more focused around a specific use case.
 
-Valid and Invalid Examples
-Please refer to the Rules of Hooks documentation to learn more about this rule.
-
-License
-MIT
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
