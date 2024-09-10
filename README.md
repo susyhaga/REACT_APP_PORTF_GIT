@@ -1,12 +1,12 @@
-#Project React App + TypeScript
+# Project React App + TypeScript
 
 This project aims to build a portfolio using the GitHub API. The layout consists of two main components: a sidebar that displays the user's GitHub profile along with a button to toggle between dark and light themes, and a section showcasing a list of the user's projects.
 
-#Tools
+## Tools
 
-editorConfig
-ESlint
-Prettier
+* editorConfig
+* ESlint
+* Prettier
 
 ## Getting Started with Create React App
 This project was bootstrapped with Create React App.
