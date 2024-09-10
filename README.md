@@ -1,6 +1,6 @@
 # Project React App + TypeScript
 
-This responsive project aims to build a portfolio using the GitHub API. The layout consists of two main components: a sidebar that displays the user's GitHub profile along with a button to toggle between dark and light themes, and a section showcasing a list of the user's projects.
+information. The layout is styled using CSS-in-JS with styled-components and is composed of two main sections: a sidebar showcasing the user's GitHub profile, including a button to toggle between dark and light themes, and a project list displaying the user's projects.
 
 ## Tools
 
