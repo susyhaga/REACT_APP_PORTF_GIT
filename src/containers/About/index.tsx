@@ -1,10 +1,10 @@
-import Titulo from '../../components/Titulo'
+import Title from '../../components/Title'
 import Paragraph from '../../components/Paragraph'
 import { GithubSection } from './styles'
 
 const About = () => (
   <section>
-    <Titulo fontSize={16}>About me</Titulo>
+    <Title fontSize={16}>About me</Title>
     <Paragraph propType="primary">
       With over 10 years of experience as a Marketing Professional, I have
       strong communication, creativity, problem-solving, teamwork, leadership,

@@ -6,14 +6,17 @@ import { P } from './styles'
 export type Props = {
   children: string
   propType?: 'primary' | 'secondary'
+  fontSize?: number
 }
 //com CHILDREN criamos um componente que aceita coisas (string no caso) dentro dele
 
 // 3)precisamos definir o tipo da propriedade aqui
 
 //7) desestruturacao para aceitar a prop propType (de styles)
-const Paragraph = ({ children, propType = 'primary' }: Props) => (
-  <P propType={propType}>{children}</P>
+const Paragraph = ({ children, propType = 'primary', fontSize }: Props) => (
+  <P propType={propType} fontSize={fontSize}>
+    {children}
+  </P>
 )
 
 //4)exportar Paragraph

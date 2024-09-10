@@ -1,23 +1,31 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import { Theme } from './themes/dark'
 
 const EstiloGlobal = createGlobalStyle`
 *{
   margin: 0;
   padding:0;
   font-family: "Inter", sans-serif;
+  list-style: none;
 }
 
 body{
   padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: ${(props) => (props.theme as Theme).backgroundColor};
+
+
 //RESPONSIVIDADE
     @media(max-width:768px){
     padding-top: 16px;
     }
   }
 `
+//exportar no index.tsx GLOBAL
 export default EstiloGlobal
 
 //APLICANDO CSS NA ESTUTURA: criando estilo do CONTAINER
+//exportar no index.tsx GLOBAL
 export const Container = styled.div`
   //MAX-WIDTH: TAMANHO DA AREA UTIL
   max-width: 1024px; //layout: 1366px ............... espacamento: 171 x2 = 342px
@@ -31,9 +39,5 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     max-width: 80%; ////MAX-WIDTH: TAMANHO DA AREA UTIL
     display: block;
-  }
-
-  img {
-    max-width: 100%; //imagem fica de acordo com a area util
   }
 `
